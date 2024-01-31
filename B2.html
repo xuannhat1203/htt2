@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="addNameBtn">@</button>
+    <input type="text" id="nameInput" placeholder=" Project Name">
+    <button id="addImgBtn">@</button>
+    <input type="text" id="imgInput" placeholder=" Image URL">
+    <button id="addLinkBtn">@</button>
+    <input type="text" id="linkInput" placeholder=" Link">
+    <button id="addTagsBtn">@</button>
+    <input type="text" id="tagsInput" placeholder=" Tags (Ex: React, Angular)">
+    <button id="new">+ New Project</button>
+    <table border="1" style="width: 1000px;">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Project Name</th>
+                <th>Image URL</th>
+                <th>Link</th>
+                <th>Tags</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <script>
+        let array = JSON.parse(localStorage.getItem("array")) || [];
+        function renderTable() {
+            let tbody = document.getElementById("tbody");
+            tbody.innerHTML = "";
+            array.forEach(item => {
+                let tr = document.createElement("tr");
+                let id = document.createElement("td");
+                id.textContent = item.id;
+                tr.appendChild(id);
+                let name = document.createElement("td");
+                name.textContent = item.name;
+                tr.appendChild(name);
+                let img = document.createElement("td");
+                img.innerHTML = `<img src="${item.img}" alt="Project Image" style="max-height: 100px;">`;
+                tr.appendChild(img);
+                let link = document.createElement("td");
+                link.innerHTML = `<a href="${item.link}" target="_blank">Visit</a>`;
+                tr.appendChild(link);
+                let tag = document.createElement("td");
+                tag.innerHTML = item.tag;
+                tr.appendChild(tag);
+                let button = document.createElement("td");
+                button.style.backgroundColor = "red";
+                button.style.textAlign = "center";
+                tag.style.textAlign = "center";
+                link.style.textAlign = "center";
+                img.style.textAlign = "center";
+                name.style.textAlign = "center";
+                button.innerHTML = item.button;
+                tr.appendChild(button);
+                let deleteButton = button.querySelector("button:nth-child(1)");
+deleteButton.onclick = function() {
+    tr.remove();
+    let projectId = item.id;
+    let projectIndex = array.findIndex(project => project.id === projectId);
+    if (projectIndex !== -1) {
+        array.splice(projectIndex, 1);
+        localStorage.setItem("array", JSON.stringify(array)); // Sửa lỗi ở đây
+    }
+};
+                let updateButton = button.querySelector("button:nth-child(2)");
+                updateButton.onclick = function() {
+                    let number = +prompt("Enter your choice");
+                    switch (number) {
+                        case 1:
+                            let textID = prompt("Enter new ID");
+                            id.textContent = textID;
+                            break;
+                        case 2:
+                            let textName = prompt("Enter new name");
+                            name.textContent = textName;
+                            break;
+                    }
+                }
+                tbody.appendChild(tr);
+            });
+        }
+        renderTable();
+
+        let newProjectBtn = document.getElementById("new");
+        newProjectBtn.onclick = function() {
+            let newName = document.getElementById("nameInput").value;
+            let newImage = document.getElementById("imgInput").value;
+            let newLink = document.getElementById("linkInput").value;
+            let newTag = document.getElementById("tagsInput").value;
+            let newProject = {
+                id: array.length + 1,
+                name: newName,
+                img: newImage,
+                link: newLink,
+                tag: `
+                    <button id="btn">Angular</button>
+                    <button>React</button>
+                    <button>Jquery</button>
+                `,
+                button: `
+                    <button>Delete</button>
+                    <button>Update</button>
+                `
+            };
+            array.push(newProject);
+            renderTable();
+            document.getElementById("nameInput").value = "";
+            document.getElementById("imgInput").value = "";
+            document.getElementById("linkInput").value = "";
+            document.getElementById("tagsInput").value = "";
+            localStorage.setItem("projects", JSON.stringify(array));
+        };
+    </script>
+</body>
+</html>

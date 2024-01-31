@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.start{
+    display: flex;
+    align-items: center;
+}
+.mid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    top: 10px;
+}
+.mid a{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.end button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    color: rgb(16, 141, 141);
+    background-color: white;
+    border: 1px solid rgb(16, 141, 141);
+}
+main{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(165, 222, 236);
+    display: flex;
+}
+#text{
+    height: 700px;
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#text h3{
+    font-size: 30px;
+    color: rgb(48, 57, 138);
+}
+#text h1{
+    font-size: 60px;
+}
+#ss1{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#text button {
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: rgb(92, 92, 173);
+    border-radius: 10px;
+    border: none;
+}
+.left, .right,input{
+    font-size: 40px;
+}
+#ip1{
+    position: relative;
+    left: 99px;
+}
+#ip2{
+    position: relative;
+    left: 123px;
+}
+#ip3{
+    position: relative;
+    left: 183px;
+}
+#ss2{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.item1{
+    height: 130px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    height: 110px;
+    width: 150px;
+}
+.content{
+    font-size: 25px;
+}
+.top,.bot{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.ss3_top{
+    height: 300px;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.ss3_top button{
+    height: 30px;
+    width: 100px;
+    color: green;
+    background-color: white;
+    border-color: greenyellow;
+}
+.btn{
+    height: 50px;
+    width: 150px;
+}
+.item_left{
+    width: 90px;
+    height: 50px;
+}
+.item{
+    width: 520px;
+    height: 200px;
+    background-color: rgb(235, 225, 225);
+}
+.item_top{
+    width: 500px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.button{
+    width: 100px;
+    height: 40px;
+    color: blue;
+    background-color: rgb(44, 205, 211);
+    border-radius: 10px;
+    border-color:rgb(44, 205, 211) ;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icon_btn{
+    width: 350px;
+}
+article{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    left: 100px;
+    justify-content: center;
+}
+.top_icon{
+    display: flex;
+    gap: 30px;
+}
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;  
+}
+.btn{
+    position: relative;
+    left: 100px;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+}
+#ss4{
+    width: 100%;
+    height: 700px;
+    font-size: 30px;
+}
+.infor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+#send{
+    width: 150px;
+    height: 50px;
+}
+#ss4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infor_right{
+    width: 30%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.emaill{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    left: 25px;
+}
+#ss5{
+    width: 100%;
+    height: 310px;
+    background-color: rgb(105, 105, 211);
+    color: white;
+}
+.foot_left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    gap: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+.ul{
+    display: flex;
+    gap: 150px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+.arr{
+    display: flex;
+    gap: 20px;
+}
+.fooot{
+    display: flex;
+    justify-content: space-around;
+    gap: 800px;
+}
+.img_infor{
+    position: relative;
+    left: -20px;
+}
