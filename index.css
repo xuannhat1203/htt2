@@ -3,288 +3,500 @@
     margin: 0;
     box-sizing: border-box;
 }
-html {
-    scroll-behavior: smooth;
-}
-header{
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-around;
-}
-.start{
+.logo{
     display: flex;
     align-items: center;
-}
-.mid {
-    display: flex;
     flex-wrap: wrap;
     gap: 10px;
     position: relative;
-    top: 10px;
+    left: 180px;
 }
-.mid a{
-    height: 50px;
-    width: 100px;
-    font-size: 20px;
-    text-decoration: none;
-}
-.end button{
-    height: 50px;
-    width: 150px;
-    font-size: 20px;
-    color: rgb(16, 141, 141);
-    background-color: white;
-    border: 1px solid rgb(16, 141, 141);
-}
-main{
-    height: 700px;
-    width: 100%;
-    background-color: rgb(165, 222, 236);
+.logo2{
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    left: 200px;
 }
-#text{
-    height: 700px;
-    width: 58%;
+.text{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    font-size: 30px;
+}
+.span{
+    width: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+.head_btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 120px;
+    height: 40px;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    background-color: antiquewhite;
 }
-#text h3{
-    font-size: 30px;
-    color: rgb(48, 57, 138);
-}
-#text h1{
-    font-size: 60px;
-}
-#ss1{
-    width: 100%;
-    height: 400px;
+.header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-#text button {
-    height: 50px;
-    width: 200px;
-    color: white;
-    background-color: rgb(92, 92, 173);
-    border-radius: 10px;
-    border: none;
-}
-.left, .right,input{
-    font-size: 40px;
-}
-#ip1{
-    position: relative;
-    left: 99px;
-}
-#ip2{
-    position: relative;
-    left: 123px;
-}
-#ip3{
-    position: relative;
-    left: 183px;
-}
-#ss2{
-    height: 500px;
+    height: 100px;
     width: 100%;
+    background-color: antiquewhite;
+}
+.image{
+    width: 100%;
+    height: 848px;
+    background-image: url(https://blog.freec.asia/wp-content/uploads/2020/11/lap-trinh-nhung-la-gi-01-1.jpg);
+    background-size: cover;
+    display: flex;
+}
+img{
+    position: relative;
+    right: 200px;
+}
+.text2{
+    width: 50%;
+    height: 848px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.img2{
+    width: 50%;
+    height: 848px;
+    display: flex;
+    justify-content: center;
+}
+.text2 p{
+    font-size: 40px;
+    width: 400px;
+}
+.down{
+    width: 200px;
+    height: 40px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+}
+.in_text{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    position: relative;
+    top: 350px;
+}
+.detail{
+    position: relative;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 700px;
+    height: 250px;
+}
+.arr{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    position: relative;
+    left: 201px;
+}
+.date{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 270px;
+
+}
+.item2{
+    color: rgb(64, 156, 126);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.under_header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    position: relative;
+    right: 40px;
+}
+.person{
+    font-size: 35px;
+}
+.text3{
+    font-size: 30px;
+}
+.item1,.item2{
+    font-size: 30px;
 }
 .item1{
-    height: 130px;
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.item{
+    width: 100%;
+    height: 400px;
+}
+.choice1{
+    width: 300px;
+    height: 100px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 2px 2px gray;
+    border-radius: 5px;
+    display: flex;
+}
+.icon_img{
+    width: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .icon{
-    height: 110px;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    background-image: url(./android.svg);
+}
+.icon_text{
     width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.content{
-    font-size: 25px;
-}
-.top,.bot{
+.top{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-}
-.ss3_top{
-    height: 300px;
-    width: 100%;
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
-}
-.ss3_top button{
-    height: 30px;
-    width: 100px;
-    color: green;
-    background-color: white;
-    border-color: greenyellow;
-}
-.btn{
-    height: 50px;
-    width: 150px;
-}
-.item_left{
-    width: 90px;
-    height: 50px;
-}
-.item{
-    width: 520px;
-    height: 200px;
-    background-color: rgb(235, 225, 225);
-}
-.item_top{
-    width: 500px;
-    height: 120px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.button{
-    width: 100px;
-    height: 40px;
-    color: blue;
-    background-color: rgb(44, 205, 211);
-    border-radius: 10px;
-    border-color:rgb(44, 205, 211) ;
-}
-.item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.icon_btn{
-    width: 350px;
-}
-article{
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: relative;
-    left: 100px;
-    justify-content: center;
-}
-.top_icon{
-    display: flex;
-    gap: 30px;
 }
 .bottom{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;  
+    gap: 20px;
+    justify-content: center;
 }
-.btn{
-    position: relative;
-    left: 100px;
-    border: none;
-    background-color: white;
-    font-size: 20px;
-}
-#ss4{
-    width: 100%;
-    height: 700px;
-    font-size: 30px;
-}
-.infor{
+.item{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 20px;
 }
-#send{
-    width: 150px;
-    height: 50px;
+.icon2{
+    width: 70px;
+    height: 70px;
+    background-image: url(./Angular.svg);
+    background-size: cover;
 }
-#ss4{
+.icon3{
+    width: 70px;
+    height: 70px;
+    background-image: url(./bootstrap.svg);
+    background-size: cover;
+}
+.icon4{
+    width: 70px;
+    height: 70px;
+    background-image: url(./vue.svg);
+    background-size: cover;
+    background-size: cover;
+}
+.icon5{
+    width: 70px;
+    height: 70px;
+    background-image: url(./react.svg);
+    background-size: cover;
+}
+.icon6{
+    width: 70px;
+    height: 70px;
+    background-image: url(./mongodb.svg);
+    background-size: cover;
+}
+.icon66{
+    width: 30px;
+    height: 70px;
+    background-image: url(./mongodb.svg);
+}
+.icon7{
+    width: 70px;
+    height: 70px;
+    background-image: url(./laravel.svg);
+    background-size: cover;
+}
+.icon8{
+    width: 70px;
+    height: 70px;
+    background-image: url(./nodejs-icon.svg);
+    background-size: cover;
+}
+.project{
+    width: 100%;
+    height: 600px;
+}
+.head_p{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.notice{
+    width: 100px;
+    height: 30px;
+    color: green;
+    background-color: rgb(219, 212, 212);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.infor_right{
-    width: 30%;
-    height: 700px;
+.pro{
+    font-size: 30px;
+}
+.body_p{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    left: 155px;
+    display: flex;
+    align-items: center;
+}
+.body_p button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: white;
+}
+.all{
+    width: 100px;
+    height: 30px;
+    border-bottom: 2px solid gray;
+}
+.star_item{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    left: 150px;
+}
+.star1{
+    width: 400px;
+    height: 200px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 2px 2px gray;
+}
+.link{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.top_star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_star button{
+    width: 100px;
+    height: 30px;
+}
+.btn_star{
+    position: relative;
+    right: 30px;
+}
+.star1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arr2,.arr3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.my_infor{
+    width: 100%;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
-.phone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+input{
+    width: 450px;
+    height: 30px;
 }
-.emaill{
+.name_email,.subject_contact{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    position: relative;
-    left: 25px;
 }
-#ss5{
+.in_form{
+    width: 50%;
+    height: 400px;
+    font-size: 20px;
+}
+.under_get{
     width: 100%;
-    height: 310px;
-    background-color: rgb(105, 105, 211);
-    color: white;
-}
-.foot_left{
+    height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
-    width: 50%;
-    height: 280px;
     justify-content: center;
     align-items: center;
 }
-.footer{
-    display: flex;
-    gap: 150px;
-    justify-content: space-around;
-    align-items: center;
-}
-.ul{
-    display: flex;
-    gap: 150px;
-}
-.column{
+.text_get{
+    width: 100%;
+    height: 150px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
-    font-size: 20px;
+    justify-content: center;
 }
-.arr{
-    display: flex;
-    gap: 20px;
+.btn_infor button{
+    width: 200px;
+    height: 40px;
 }
-.fooot{
+.btn_infor{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    gap: 800px;
+    justify-content: flex-start;
 }
 .img_infor{
+    width:300px;
+    height: 700px;
     position: relative;
-    left: -20px;
+    left: 1300px;
+    bottom: 600px;
+}
+.phone,.emaill{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.under_img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    top: 20px;
+}
+.image_if{
+    width: 300px;
+    height: 450px;
+    background-image: url(./contact.svg);
+    background-size: cover;
+}
+.in_form{
+    position: relative;
+    left: 130px;
+}
+.footer {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 50px;
+	background-color: darkblue;
+    margin-top: 40px;
+    gap: 130px;
+}
+
+.column {
+	gap: 10px;
+	margin-right: 20px;
+    list-style: none;
+}
+
+.column h2 {
+    text-transform: uppercase;
+    color: azure;
+}
+
+.column h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: azure;
+}
+.column li {
+    margin-bottom: 15px;
+    color: grey;
+}
+.end ul li {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: inline; 
+    margin-left: 5px;
+}
+
+.end ul p {
+    margin-left: 10px;
+    color: grey;
+    display: flex;
+}
+.end{
+    width: 100%;
+    height: 40px;
+    background-color: darkblue;
+}
+
+.column {
+    gap: 50px;
+}
+.footer,.end{
+    position: relative;
+    bottom: 700px;
+}
+ul{
+    position: relative;
+    left: 180px;
+}
+.hr{
+    height: 2px;
+    background-color: gray;
+    width: 100%;
+}
+.detail{
+    position: relative;
+    top: 30px;
+}
+.text_icon{
+    position: relative;
+    right: 50px;
+    top: 10px;
 }
